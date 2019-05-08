@@ -33,7 +33,28 @@ body {
 }
 
 .appointments li {
-  background-color: #ddd;
   padding: 1em;
   margin: 1em 0;
+}
+
+.appt {
+  background-color: #ddd;
+}
+
+.cat-school {
+  background-color: lightyellow;
+}
+.cat-work {
+  background-color: lightsalmon;
+}
+.cat-home {
+  background-color: palegreen;
+}
+.cat-social {
+  background-color: paleturquoise;
+}
+
+.critical:before {
+  content: "!!!";
+  padding-right: 0.5em;
 }
