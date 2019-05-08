@@ -17,6 +17,8 @@ body {
 
 .view-day {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "morn aft aft eve";
   grid-gap: 1em;
   margin: 1rem 0;
   padding: 0 1rem;
@@ -31,6 +33,17 @@ body {
   text-transform: uppercase;
   border-bottom: 0.125em solid #222;
 }
+
+.tod-morning {
+  grid-area: morn;
+}
+.tod-afternoon {
+  grid-area: aft;
+}
+.tod-evening {
+  grid-area: eve;
+}
+
 
 .appointments li {
   padding: 1em;
