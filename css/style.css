@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600');
+
+body {
+  background-color: ghostwhite;
+  color: #222;
+  font: normal normal 1em 'Source Sans Pro', helvetica, arial, sans-serif;
+}
+
+.view-day {
+  display: grid;
+  grid-gap: 1em;
+  margin: 1em 0;
+}
+
+.time-of-day {
+
+}
+
+.time-of-day h2 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  border-bottom: 0.125em solid #222;
+}
