@@ -53,8 +53,3 @@ body {
 .cat-social {
   background-color: paleturquoise;
 }
-
-.critical:before {
-  content: "!!!";
-  padding-right: 0.5em;
-}
