@@ -6,18 +6,34 @@ body {
   font: normal normal 1em 'Source Sans Pro', helvetica, arial, sans-serif;
 }
 
+.cal-heading {
+  padding: 0 1rem;
+}
+
+.full-date {
+  font-size: 2em;
+  margin: 1rem 0;
+}
+
 .view-day {
   display: grid;
   grid-gap: 1em;
-  margin: 1em 0;
+  margin: 1rem 0;
+  padding: 0 1rem;
 }
 
-.time-of-day {
-
+.time-of-day:hover {
+  background-color: #eee;
 }
 
 .time-of-day h2 {
   font-size: 1.25em;
   text-transform: uppercase;
   border-bottom: 0.125em solid #222;
+}
+
+.appointments li {
+  background-color: #ddd;
+  padding: 1em;
+  margin: 1em 0;
 }
