@@ -63,6 +63,7 @@ body {
 
 .appt {
   background-color: #ddd;
+  min-height: 4em;
 }
 
 .cat-school {
@@ -81,6 +82,10 @@ body {
   background-color: paleturquoise;
 }
 
+.low {
+  opacity: 0.5;
+}
+
 .critical {
   color: red;
 }
@@ -95,6 +100,10 @@ body {
   top: 0;
 }
 
+
+.start-time {
+  border-bottom: 1px solid #222;
+}
 
 
 
