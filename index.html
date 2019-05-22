@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Day Planner</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -13,29 +13,17 @@
     <div class="calendar-app">
 
       <header class="cal-header">
-        <h1 class="full-date"><time datetime="2019-05-08">Wednesday, May 8<sup>th</sup>, 2019</time></h1>
+        <h1 class="full-date"><time datetime="2019-05-08" id="today">Wednesday, May 8<sup>th</sup>, 2019</time></h1>
       </header>
       
       <main class="cal-main view-day">
-        <section class="time-of-day tod-morning">
-          <h2>Morning</h2>
+        <section class="time-of-day">
+          <!-- <h2>Morning</h2> -->
           <ol class="appointments">
             <li class="appt cat-school">08:00 Interface Development 1</li>
             <li class="appt cat-social">11:00 Lunch</li>
-          </ol>
-        </section>
-  
-        <section class="time-of-day tod-afternoon">
-          <h2>Afternoon</h2>
-          <ol class="appointments">
             <li class="appt cat-school critical">12:00 Interface Development 1</li>
             <li class="appt">15:00 Commute</li>
-          </ol>
-        </section>
-  
-        <section class="time-of-day tod-evening">
-          <h2>Evening</h2>
-          <ol class="appointments">
             <li class="appt cat-home">17:30 Dinner</li>
             <li class="appt cat-work critical">19:00 Work on some JS Exampes</li>
           </ol>
