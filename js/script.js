@@ -55,6 +55,9 @@ const convertMinutesToTime = (minOfDay = 0) => {
 
 // Write a function called formatAppointment that takes an appointment object as an argument and returns a String of formatted HTML. The return String should have all the relevant properties from the appointment Object embedded within it. Meaning any appointment passed into the function would result in a unique String of HTML being return that's specific to that appointment.
 const getAppointmentAsHtmlString = appt => {
+
+  console.log(`Inside of appointment: ${appt.name}`)
+
   // Returns a string of HTML ready to insert
   return `<li class="appt cat-${appt.category[0]} ${appt.priority}" style="height: ${appt.time.duration}px;">
             <div class="start-time">${convertMinutesToTime(appt.time.start)}</div>
@@ -84,18 +87,23 @@ const allAppts = document.getElementById(`todays-appts`);     // <ul>
 //   allAppts.innerHTML += getAppointmentAsHtmlString(allAppointments[i]);
 // }
 
-
 const getAppointmentsFromArrayAsHtmlString = appts => {
   // forEach when called from an array, will automatically iterate through each
   // value in the array and run a function, passing the value to the function automatically
   let htmlString = ``;
   
   appts.forEach(appt => {
+    console.log( `Now pointing to: ${appt.name}` )
     htmlString += getAppointmentAsHtmlString(appt);
+    console.log( `Work complete on: ${appt.name}` )
   });
 
   return htmlString;
 }
 
 
-allAppts.innerHTML = getAppointmentsFromArrayAsHtmlString ( allAppointments );
+const loadTodaysAppointments = () => {
+  allAppts.innerHTML = getAppointmentsFromArrayAsHtmlString ( allAppointments );
+}
+
+document.getElementById(`loadappts`).addEventListener(`click`, loadTodaysAppointments);
